@@ -1,0 +1,161 @@
+/* Common */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+  background-color: #eee8e8;
+  font-family: "Roboto", sans-serif;
+
+}
+
+#header {
+  background-color: #eee8e8;
+
+}
+
+
+#search {
+  background-color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  position: relative;
+  width: 25vw;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#searchBar {
+  overflow: hidden;
+}
+
+#searchBarInput {
+  border: none;
+  outline: none;
+}
+
+#searchList {
+  position: absolute;
+  top: 100%;
+  z-index: 100;
+  left: 0;
+  width: inherit;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: hidden;
+}
+
+#searchList.active {
+  display: visible;
+}
+
+.searchLink {
+  color: black;
+  text-decoration: none;
+}
+
+/* Home Page */
+
+
+@media (min-width: 600px) {
+  .grid {grid-template-columns: repeat(2, 1fr);}
+}
+
+@media (min-width: 900px) {
+  .grid {grid-template-columns: repeat(3, 1fr);}
+}
+
+.grid {
+  display: grid;
+  max-width: 1200px;
+  gap: 3rem;
+  margin: 3em auto;
+}
+
+#leadImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.3em;
+}
+
+.eventType {
+  position: absolute;
+  margin: 0.5em;
+  padding: 0.3em 0.5em;
+  background-color: #ffffff;
+  border-radius: 0.3em;
+  font-size: 0.8em;
+}
+
+#timing {
+  font-size: small;
+  color: rgb(122, 119, 119);
+  margin: 0.5em 0;
+}
+
+#selectEventType {
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.3rem;
+  outline: white;
+  outline-offset: 0.5rem;
+  background-color: #ffffff;
+  color: rgb(122, 119, 119);
+}
+
+#titleLink {
+  color: black;
+  text-decoration: none;
+}
+
+#titleLink:hover {
+  color: rgb(201, 17, 63);
+}
+
+/* Event page */
+.detailsCard {
+  border-radius: 0.3rem;
+  box-shadow: 2px 2px 2px rgba(170, 165, 165, 0.384);
+  background-color: #ffffff;
+  padding: 1rem 0.5rem;
+}
+
+.list-group-item {
+  border: none;
+  font-size: small;
+}
+
+.list-group-item > span > img {
+  width: 2vw;
+  margin-right: 1vw;
+}
+
+.list-group-item > div > p {
+  margin-bottom: 0;
+  color: rgb(48, 46, 46);
+}
+
+#description {
+  text-align: justify;
+}
+
+.speakerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.8rem;
+}
+
+.profileImg {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.speakerCard {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  aspect-ratio: 1/1;
+  font-size: small;
+  border-radius: 0.3rem;
+  box-shadow: 2px 2px 2px rgba(170, 165, 165, 0.384);
+}
